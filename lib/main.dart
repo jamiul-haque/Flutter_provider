@@ -7,6 +7,7 @@ import 'package:providerr/provider/theme_change_provider.dart';
 import 'package:providerr/screens/dark_theme_sereen.dart';
 import 'package:providerr/screens/examples/example_one.dart';
 import 'package:providerr/screens/favourate/favourate_screen.dart';
+import 'screens/favourate/value_notify_listner.dart';
 
 void main() {
   runApp(const MyApp());
@@ -36,7 +37,7 @@ class MyApp extends StatelessWidget {
           darkTheme: ThemeData(
             brightness: Brightness.dark,
           ),
-          home: const DarkThemeScreen(),
+          home: NotifyListnerScreen(),
         );
       }),
     );
